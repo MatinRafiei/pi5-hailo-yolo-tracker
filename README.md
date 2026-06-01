@@ -5,7 +5,7 @@
 [![Platform: Raspberry Pi 5](https://img.shields.io/badge/Platform-Raspberry_Pi_5-red)](#)
 
 <p align="center">
-  <video src="https://github.com/MatinRafiei/pi5-hailo-yolo-tracker/raw/main/docs/assets/track_video_cpp.mp4" width="600" controls autoplay loop></video>
+  <img src="./docs/assets/track_video_cpp.gif" width="600">
   <br>
   <em>Real-time YOLO26 + BoTSORT tracking running natively in C++ on the Raspberry Pi 5 & Hailo-8L.</em>
 </p>
@@ -100,8 +100,8 @@ While the Python wrapper is excellent for prototyping, our C++ pipeline extracts
 | Pipeline | Python (Wrapper) | C++ (Bare Metal) |
 | :--- | :--- | :--- |
 | **Static Image** | <img src="docs/assets/detect_image_py.jpg" width="300"> | <img src="docs/assets/detect_image_cpp.jpg" width="300"> |
-| **Live Detection** | <video src="https://github.com/MatinRafiei/pi5-hailo-yolo-tracker/raw/main/docs/assets/detect_video_py.mp4" width="300" controls></video> | <video src="https://github.com/MatinRafiei/pi5-hailo-yolo-tracker/raw/main/docs/assets/detect_video_cpp.mp4" width="300" controls></video> |
-| **Live Tracking** | <video src="https://github.com/MatinRafiei/pi5-hailo-yolo-tracker/raw/main/docs/assets/track_video_py.mp4" width="300" controls></video> | <video src="https://github.com/MatinRafiei/pi5-hailo-yolo-tracker/raw/main/docs/assets/track_video_cpp.mp4" width="300" controls></video> |
+| **Live Detection** | <img src="docs/assets/detect_video_py.gif" width="300"> | <img src="docs/assets/detect_video_cpp.gif" width="300"> |
+| **Live Tracking** | <img src="docs/assets/track_video_py.gif" width="300"> | <img src="docs/assets/track_video_cpp.gif" width="300"> |
 
 ### ⏱️ Performance Insights & Hardware Bottlenecks
 The physical USB camera used in the demonstrations above is hardware-limited to **30 FPS**, which creates an artificial bottleneck for the pipeline. 
