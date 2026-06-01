@@ -1,0 +1,9 @@
+path: ./dataset        # Root directory of your dataset
+train: train/images    # Train images (relative to 'path')
+val: valid/images        # Validation images (relative to 'path')
+test: test/images      # Test images (optional)
+
+# Classes Configuration
+names:
+  0: bottle
+# Add more classes here if needed (e.g., 1: cup, 2: person)
