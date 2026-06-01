@@ -38,14 +38,13 @@ Raw AI detections jitter. To create a production-ready system, we integrate the 
 
 Because this is a full-stack pipeline, the repository is split into dedicated modules. **Please refer to the specific `README.md` in each directory for detailed, step-by-step instructions.**
 
-| Directory | Purpose | Documentation Link |
+Directory | Purpose | Documentation Link |
 | :--- | :--- | :--- |
 | **`training/`** | Google Colab / Jupyter notebooks for training the YOLO26 model on custom datasets (e.g., Bottle detection) and exporting it to ONNX. | [📖 Read Training Guide](training/README.md) |
 | **`export/`** | A Dockerized x86_64 environment containing the Hailo compiler. Automates INT8 calibration and compiles `.onnx` to `.hef`. | [📖 Read Export Guide](export/README.md) |
+| **`python/`** | Python implementations of the inference and tracking pipelines, ideal for rapid prototyping and testing. | [📖 Read Python Guide](python/README.md) |
 | **`cpp/`** | The maximum-performance runtime environment. Contains `detect_video.cpp` and `track_video.cpp` for bare-metal execution. | [📖 Read C++ Guide](cpp/README.md) |
 | **`docs/`** | Hardware setup guides, specifically bypassing Wi-Fi latency by using an Android smartphone as a wired USB camera. | [📖 Read USB Camera Guide](docs/android_usb_camera.md) |
-
-*(Note: The root directory contains the Python versions of the inference scripts: `detect_video.py`, `track_video.py`, etc., for rapid prototyping).*
 
 ---
 
